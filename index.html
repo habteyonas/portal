@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habtamu Yonas Adem | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; }
+    .glow-text { text-shadow: 0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.6); }
+    .bg-natural {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 1s ease-out, transform 1s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-natural text-gray-900">
+
+  <!-- Overlay -->
+  <div class="bg-white/70 backdrop-blur-sm min-h-screen">
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center fade-in">
+      <img src="your-photo.jpg" alt="Habtamu Yonas Adem" class="w-40 h-40 rounded-full shadow-lg border-4 border-green-500 mb-6 hover:scale-105 transition-transform duration-500">
+      <h1 class="text-4xl md:text-6xl font-bold glow-text text-green-700">Habtamu Yonas Adem</h1>
+      <p class="mt-4 text-xl md:text-2xl text-green-600">Database Administrator | PHP & SQL Developer</p>
+      <a href="#contact" class="mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-lg hover:bg-green-400 transition">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-green-600 mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed">I graduated from the Ethiopian National Defense University, College of Engineering, in Computer Science and System Engineering. With over 10 years of experience as a Database Administrator, I specialize in Oracle, MySQL, PHP, HTML, CSS, and JavaScript. I also contribute to software development, graphics design, and video editing projects.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 px-6 bg-white/80 rounded-2xl shadow-md max-w-6xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-green-600 mb-6 text-center">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="Oracle" class="h-10 mx-auto mb-2">Oracle</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL" class="h-10 mx-auto mb-2">MySQL</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP" class="h-10 mx-auto mb-2">PHP</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-10 mx-auto mb-2">JavaScript</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML CSS" class="h-10 mx-auto mb-2">HTML & CSS</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969018.png" alt="JasperReports" class="h-10 mx-auto mb-2">JasperReports</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/888/888954.png" alt="Design" class="h-10 mx-auto mb-2">Graphics Design</div>
+        <div class="p-4 bg-green-100 rounded-xl shadow hover:scale-105 transition"><img src="https://cdn-icons-png.flaticon.com/512/888/888941.png" alt="Video" class="h-10 mx-auto mb-2">Video Editing</div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto fade-in">
+      <h2 class="text-3xl font-bold text-green-600 mb-6">Experience</h2>
+      <div class="space-y-6">
+        <div class="bg-white/80 p-6 rounded-xl shadow-md hover:scale-[1.02] transition-transform">
+          <h3 class="text-xl font-semibold">Database Administrator</h3>
+          <p class="text-green-700">2012 – Present</p>
+          <ul class="list-disc ml-6 mt-2 text-gray-800">
+            <li>Maintaining and updating databases (Oracle & MySQL)</li>
+            <li>Configuring Oracle DB with JasperReports for reporting</li>
+            <li>Software development (PHP, HTML, CSS, JS, Java with NetBeans)</li>
+            <li>Biometrics data handling and system integration</li>
+            <li>Graphics & video editing for organizational use</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 px-6 bg-white/80 max-w-4xl mx-auto rounded-xl shadow-md fade-in">
+      <h2 class="text-3xl font-bold text-green-600 mb-6">Education</h2>
+      <p class="text-lg text-gray-800">Bachelor of Science in Computer Science & System Engineering<br>Ethiopian National Defense University</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold text-green-600 mb-6">Contact Me</h2>
+      <p>Email: <a href="mailto:habtamuyonas21@gmail.com" class="text-green-700 hover:underline">habtamuyonas21@gmail.com</a></p>
+      <p>Phone: <span class="text-green-700">+251-942740568</span></p>
+      <a href="HabtamuYonasAdem-CV.docx" download class="mt-6 inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-lg hover:bg-green-400 transition">Download CV</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-700 fade-in">
+      <p>© 2025 Habtamu Yonas Adem. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
