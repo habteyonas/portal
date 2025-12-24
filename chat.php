@@ -1,10 +1,10 @@
    <?php
 $msg = $_POST['message'];
 
-$apiKey = " 0364825974  ";
+$apiKey = "0364825974";
 
 $data = [
-    "model" => "Gemkni-2-flash",
+    "model" => "Gemini 2.0 Flash",
     "messages" => [
         ["role" => "user", "content" => $msg]
     ]
