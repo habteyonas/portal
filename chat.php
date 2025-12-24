@@ -10,7 +10,7 @@ $data = [
     ]
 ];
 
-$ch = curl_init("https://docs.cloud.google.com/docs/ai-ml");
+$ch = curl_init("https://aistudio.google.com");
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     "Content-Type: application/json",
     "Authorization: Bearer $apiKey"
