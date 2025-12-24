@@ -1,4 +1,4 @@
-import OpenAI from "Gemini 2.0 Flash";
+import Gemini from "Gemini 2.0 Flash";
 const client = new  Gemini();
 
 const response = await client.responses.create({
