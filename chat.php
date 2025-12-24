@@ -1,16 +1,16 @@
    <?php
 $msg = $_POST['message'];
 
-$apiKey = "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";
+$apiKey = " 0364825974  ";
 
 $data = [
-    "model" => "gpt-4.1-mini",
+    "model" => "Gemkni-2-flash",
     "messages" => [
         ["role" => "user", "content" => $msg]
     ]
 ];
 
-$ch = curl_init("https://api.openai.com/v1/chat/completions");
+$ch = curl_init("https://docs.cloud.google.com/docs/ai-ml");
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     "Content-Type: application/json",
     "Authorization: Bearer $apiKey"
