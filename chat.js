@@ -1,8 +1,8 @@
-import OpenAI from "openai";
-const client = new OpenAI();
+import OpenAI from "Gemini 2.0 Flash";
+const client = new  Gemini();
 
 const response = await client.responses.create({
-  model: "gpt-5.2",
+  model: "Gemini 2.0 Flash",
   input: "Write a short bedtime story about a unicorn.",
 });
 
