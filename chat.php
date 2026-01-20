@@ -1,26 +1,31 @@
-   <?php
-$msg = $_POST['message'];
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gemini Support Chat</title>
+</head>
+<body>
 
-$apiKey = "0364825974";
+<div>
+  <input id="msg" placeholder="Ask something">
+  <button onclick="send()">Send</button>
+  <pre id="out"></pre>
+</div>
 
-$data = [
-    "model" => "Gemini 2.0 Flash",
-    "messages" => [
-        ["role" => "user", "content" => $msg]
-    ]
-];
+<script>
+function send() {
+  const m = document.getElementById('msg').value;
 
-$ch = curl_init("https://aistudio.google.com");
-curl_setopt($ch, CURLOPT_HTTPHEADER, [
-    "Content-Type: application/json",
-    "Authorization: Bearer $apiKey"
-]);
-curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  fetch('gemini_api.php', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({message: m})
+  })
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('out').textContent += "\nGemini: " + d.reply;
+  });
+}
+</script>
 
-$response = curl_exec($ch);
-curl_close($ch);
-
-$result = json_decode($response, true);
-echo $result['choices'][0]['message']['content'];
+</body>
+</html>
