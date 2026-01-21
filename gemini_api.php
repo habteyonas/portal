@@ -37,4 +37,4 @@ $res = json_decode($response, true);
 
 $reply = $res['candidates'][0]['content']['parts'][0]['text'] ?? 'No response';
 
-echo json_encode(['reply' => $reply]);
+echo json_encode(['reply' => $reply])>;
